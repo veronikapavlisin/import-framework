@@ -1,6 +1,6 @@
 ### PHP Configuration‑Driven Import Framework
 
-Example architecture of a configuration‑driven import pipeline used in large backend systems.
+Example architecture of a configuration-driven import pipeline for validating and deploying structured content across multiple environments.
 
 
 
