@@ -3,22 +3,18 @@
 Example architecture of a configuration-driven import pipeline for validating and deploying structured content across multiple environments.
 
 
+##### Real World Context
+
+This project demonstrates the architecture of an internal automation tool used
+to deploy content updates across multiple production environments.
+
+The system validates configuration and structured data before executing
+transactional updates across multiple database targets. The design allows new
+import types to be added through dedicated importer classes without modifying
+the core import engine.
+
 
 ##### Architecture Overview
-
-
-
-This project demonstrates a configuration-driven import pipeline designed for safely deploying structured content across multiple environments.
-
-
-
-The system processes import definitions from YAML configuration files, loads structured XML content, validates the data, and executes the import through specialized importer plugins.
-
-
-
-##### Import Pipeline
-
-
 
 YAML configuration
 
@@ -42,11 +38,14 @@ Transactional database import
 
 Logging \& checksum control
 
+##### Project Structure
+
+src/
+config/
+data/
 
 
 ##### Key Design Principles
-
-
 
 * Plugin architecture – different content types are handled by dedicated importer classes.
 * Validation-first execution – all content is validated before any database changes occur.
