@@ -41,7 +41,9 @@ Logging \& checksum control
 ##### Project Structure
 
 src/
+
 config/
+
 data/
 
 
