@@ -717,7 +717,7 @@ class import
 		$data = $this->get_data();
 		$item_list = $data[ $game ][ $language ][ $world ];
 
-		$import_success = 'true' == $continue_flag;
+		$import_success = $continue_flag;
 		$anything_to_import = false;
 
 		$import_report = [];
